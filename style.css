@@ -1,0 +1,150 @@
+*{
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Mochiy+Pop+P+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+}
+.homepage{
+     background-color: #FFFBEF;
+     height: 100vh;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+.navbar{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 15px 70px;
+     width: 100%;
+}
+.navbar > div > p{
+     font-size: 2rem;
+     font-weight: 900;
+     font-family: forte;
+     font-weight: 400;
+}
+.navbar > div > ol > li > a{
+     font-size: 1.3rem;
+     text-decoration: none;
+     font-family: "Poppins", sans-serif;
+     font-weight: 600;
+     letter-spacing: 1px;
+     color: #343534;
+     
+}
+.navbar > li > a :hover{
+     color: #FEBD01;
+     
+}
+.navbar div ol li{
+     display: inline;
+     padding: 0px 10px;
+}
+.navbar div button{
+     color: #FFFBEF;
+     background-color: #FEBD01;
+     padding: 12px;
+     border-radius: 50%;
+     border: none;
+     /* :hover{
+          background-color: antiquewhite;
+     } */
+
+}
+.navbar div button:hover{
+     background-color: #FDD55B;
+     transition: all .1s;
+}
+.navbar > div > button > i{
+     font-size: 25px;
+}
+.heroSection{
+     width: 96%;
+     height: 85vh;
+     background-color: #FDD55B;
+     border-radius: 25px;
+     background-image: url(media/img\ 4.jpg);
+     object-fit: fill;
+     background-size: cover;
+     padding: 70px;
+     opacity: 90%;
+}
+
+.heroSection h1{
+     font-size: 80px;
+     width: 550px;
+     text-shadow: 1px 1px 5px #000;
+     color: #FFFBEF;    
+}
+.heroSection p{
+     font-size:17px;
+     line-height: 25px;
+     width: 570px;
+     margin-top: 10px;
+     font-family: "Poppins", sans-serif;
+     letter-spacing: 1px;
+     color: #FFFBEF;
+     /* text-shadow: 2px 2px 9px #000; */
+}
+.heroSection #inputDiv{
+     height: 45px;
+     width: 350px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     background-color: #FDD55B;
+     margin-top: 30px;
+     padding: 0px 17px 0px 0px;
+     border-radius: 30px;
+
+}
+.heroSection #inputDiv i{
+     color: #FFFBEF;
+     font-size: 1.6rem;
+}
+.heroSection input{
+     /* margin-top: 20px; */
+     height: 100%;
+     width: 330px;
+     border-radius: 30px;
+     padding: 10px 20px;
+     margin-right: 4px;
+     outline: none;
+     border: 3px solid #FDD55B;
+     font-size: 20px;
+     background-color: #FEBD01;
+     color: #FFFBEF;
+     
+}
+.heroSection input::placeholder {
+     color: #FFFBEF;
+     opacity: 1; /* Firefox */
+     letter-spacing: .1px;
+   }
+.heroSection button{
+     margin-top: 14px;
+     padding: 8px 33px;
+     font-size: 1.2rem;
+     /* background-color: #FEBD01; */
+     background: #FEBD01;
+     border-radius: 30px;
+     color: #FFFBEF;
+     border: 3px solid #FDD55B;
+     font-weight: 600;
+     letter-spacing: .1px;
+     /* outline: 1px #FEBD01; */
+}
+.heroSection input:hover{
+     background-color: #FDD55B;
+     border: 3px solid #FEBD01;
+     color: #FFFBEF;
+     transition: all .4s;
+}
+.heroSection button:hover{
+     background-color: #FDD55B;
+     border: 3px solid #FEBD01;
+     color: #FFFBEF;
+     transition: all .4s;
+}
