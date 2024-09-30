@@ -1,0 +1,38 @@
+footer{
+     display: flex;
+     height: 40vh;
+     width: 100%;
+     background-color: #0C0A0B;
+     justify-content: space-around;
+     /* align-items: center; */
+     padding: 40px 70px 0px 70px;
+     color: #fff;
+
+}
+.footerDiv{
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     height:  150px ;
+     /* width: 200px; */
+     /* background-color: antiquewhite; */
+}
+.footerDiv div h2{
+     font-size: 1.6rem;
+     font-family: "Poppins", sans-serif;
+
+}
+.footerDiv div ul li{
+     display: block;
+     padding: 4px 0px;
+}
+.firstDiv{
+     width: 360px;
+}
+.footerDiv div ul li a{
+     text-decoration: none;
+     color: #fff;
+     font-family: "Poppins", sans-serif;
+     font-weight: 600;
+     font-size: 1rem;
+}
