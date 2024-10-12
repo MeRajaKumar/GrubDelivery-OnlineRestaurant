@@ -1,122 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <!-- <meta charset="UTF-8"> -->
+     <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Remix Icon Link -->
      <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
-     <link rel="stylesheet" href="Assets\style.css">
-     <link rel="stylesheet" href="Assets/footer.css">
-     <!-- Avijits Links  -->
-     <!-- <link rel="stylesheet" href="Avijit Files\Assets\style.css"> -->
-     <title>Grub Delivery</title>
+     <!-- Style File LInk -->
+      <link rel="stylesheet" href="Assets/style.css">
+     <title>Grub Delivery - Online Restaurant</title>
 </head>
 <body>
-     <section class="homepage">
-          <div class="navbar">
-               <div>
-                    <p>Grub Delivery</p>
-               </div>
+     <!-- Home Section -->
+     <section class="home-section">
+          <div class="nav-bar">
+               <div> <p>Grub <span class="span-txt">Delivery</span></p> </div>
                <div>
                     <ol>
+                         <li><a href=""><span class="span-txt">Home</span></a></li>
                          <li><a href="">Menu</a></li>
+                         <li><a href="Avijit Files\Restaurant.html" target="_parent">Restaurant</a></li>
+                         <li><a href="Sid Files\Restaurant.html" target="_parent">Food</a></li>
                          <li><a href="">Offer</a></li>
-                         <li><a href="">Foods</a></li>
-                         <li><a href="">Services</a></li>
-                         <li><a href="Avijit Files\Restaurant.html" target="_parent">Restaurants</a></li>
+                         <li><a href="">Blog</a></li>
                     </ol>
                </div>
                <div>
-                    <button type="button">
-                         <i class="ri-search-line"></i>
-                    </button>
-                    <button type="button">
-                         <i class="ri-heart-line"></i>
-                    </button>
-                    <button type="button">
-                         <i class="ri-shopping-cart-line"></i>
-                    </button>
+                    <div> <i class="ri-search-2-line"></i> </div>
+                    <div> <i class="ri-user-3-fill"></i> </div>
+                    <div> <i class="ri-shopping-cart-2-fill"></i> </div>
                </div>
           </div>
-          <div class="heroSection">
-                    <h1>Be The Fastest In Delivering Your Food</h1>
-                    <p>Craving something delicious? Get your favorite meals delivered to your doorstep with ease. Discover a world of flavors, order in seconds, and enjoy hassle-free dining at home.</p>
-                    <div id="inputDiv">
-                         <input type="address" name="" placeholder="Enter your location">
-                         <i class="ri-map-pin-line"></i>
-                    </div>
-                    <button type="button">Search Your Food</button>   
+          
+          <div class="hero-section">
+               <h1>Fast Food Restaurants</h1>
+               <p>Welcome to Grub Delivery, where every craving meets its match! From mouthwatering pizzas to juicy burgers and more, we bring the best flavors right to your doorstep. Whether you're in the mood for a quick bite or a hearty meal, our menu has something delicious for everyone, delivered fresh and fast!</p>
+               <div> <input type="text" placeholder="Enter Your Location" name="" id=""> </div>
+               <div> <button class="btns" type="button">Search Your Food</button> </div>
           </div>
      </section>
 
-     <!-- Footer Section -->
-     <footer>
-          <div class="firstDiv footerDiv">
+     <!-- Offer Section -->
+      <section class="offer-section">
+          <div class="offers">
+               <img src="medias/offer-logo.png" alt="img not showing" class="offer-logo">
+               <div> <img src="medias/burger img 1.jpeg" height=230px" width="230px" alt="" srcset=""> </div>
                <div>
-                    <h2>Grub Delivery</h2>
-               </div>
-               <div>
-                    <i class="ri-mail-send-line"><p>info@grubdelivery.co</p></i>
-                    <i class="ri-phone-line"></i><p>+91-8800998867</P>
-               </div>
-               <div>
-                    <i class="ri-facebook-fill"><a href="#" target="_blank"></a></i>
-                    <i class="ri-instagram-fill"><a href="#" target="_blank"></a></i>
-                    <i class="ri-pinterest-fill"><a href="#" target="_blank"></a></i>
+                    <h3>Tasty Thursday</h3>
+                    <h2>25% Off</h2>
+                    <button class="btns" type="button">Order Now</button>
                </div>
           </div>
-          <div class="secondDiv footerDiv">
+          <div class="offers">
+               <img src="medias/offer-logo.png" alt="img not showing" class="offer-logo">
+               <div> <img src="medias/pizza-img.jpg" height=230px" width="230px" alt="" srcset=""> </div>
                <div>
-                    <h2>About</h2>
-               </div>
-               <div>
-                    <ul>
-                         <li><a href="http://">Recipe</a></li>
-                         <li><a href="http://">Recipe</a></li>
-                         <li><a href="http://">Downloads</a></li>
-                         <li><a href="http://">Contact</a></li>
-                    </ul>
+                    <h3>Pizzas Days</h3>
+                    <h2>20% Off</h2>
+                    <button class="btns" type="button">Order Now</button>
                </div>
           </div>
-          <div class="thirdDiv footerDiv">
-               <div>
-                    <h2>Company</h2>
+      </section>
+
+     <!-- Menu Section -->
+      <section class="menu-section">
+          <div> <h1>Our menu</h1></div>
+          <div>
+               <ol>
+                    <li><button id="selected" class="menu-btns">All</button></li>
+                    <li><button class="menu-btns">Burger</button></li>
+                    <li><button class="menu-btns">Pizza</button></li>
+                    <li><button class="menu-btns">Momos</button></li>
+                    <li><button class="menu-btns">Fries</button></li>
+               </ol>
+          </div>
+          <div class="menu-container">
+               <div class="menu-iteams">
+                    <div> <img src="medias/pizza-img.jpg" alt=""></div>
+                    <div>
+                         <h2>Delicious Pizza</h2>
+                         <p>The pizza here is absolutely incredible! The crust is perfectly crispy on the outside and soft on the inside, with just the right.</p>
+                    </div>
+                    <div>
+                         <div><h2>200 Rupees</h2></div>
+                         <div><i class="ri-shopping-cart-2-fill"></i></div>
+                    </div>
+               </div>
+               <div class="menu-iteams">
+                    <div> <img src="medias/pizza-img.jpg" alt=""></div>
+                    <div>
+                         <h2>Delicious Noodles</h2>
+                         <p>The pizza here is absolutely incredible! The crust is perfectly crispy on the outside and soft on the inside, with just the right.</p>
+                    </div>
+                    <div>
+                         <div><h2>180 Rupees</h2></div>
+                         <div><i class="ri-shopping-cart-2-fill"></i></div>
+                    </div>
+               </div>
+               <div class="menu-iteams">
+                    <div> <img src="medias/pizza-img.jpg" alt=""></div>
+                    <div>
+                         <h2>Delicious Burger</h2>
+                         <p>The pizza here is absolutely incredible! The crust is perfectly crispy on the outside and soft on the inside, with just the right.</p>
+                         
+                    </div>
+                    <div>
+                         <div><h2>120 Rupees</h2></div>
+                         <div><i class="ri-shopping-cart-2-fill"></i></div>
+                    </div>
+               </div>
+               <div class="menu-iteams">
+                    <div> <img src="medias/pizza-img.jpg" alt=""></div>
+                    <div>
+                         <h2>Delicious Chai</h2>
+                         <p>The pizza here is absolutely incredible! The crust is perfectly crispy on the outside and soft on the inside, with just the right.</p>
+                         
+                    </div>
+                    <div>
+                         <div><h2>80 Rupees</h2></div>
+                         <div><i class="ri-shopping-cart-2-fill"></i></div>
+                    </div>
+               </div>
+               <div class="menu-iteams">
+                    <div> <img src="medias/pizza-img.jpg" alt=""></div>
+                    <div>
+                         <h2>Delicious Momos</h2>
+                         <p>The pizza here is absolutely incredible! The crust is perfectly crispy on the outside and soft on the inside, with just the right.</p>
+                         
+                    </div>
+                    <div>
+                         <div><h2>130 Rupees</h2></div>
+                         <div><i class="ri-shopping-cart-2-fill"></i></div>
+                    </div>
+               </div>
+               <div class="menu-iteams">
+                    <div> <img src="medias/pizza-img.jpg" alt=""></div>
+                    <div>
+                         <h2>Simple Pizza</h2>
+                         <p>The pizza here is absolutely incredible! The crust is perfectly crispy on the outside and soft on the inside, with just the right.</p>
+                         
+                    </div>
+                    <div>
+                         <div><h2>160 Rupees</h2></div>
+                         <div><i class="ri-shopping-cart-2-fill"></i></div>
+                    </div>
+               </div>
+               <div class="menu-iteams">
+                    <div> <img src="medias/pizza-img.jpg" alt=""></div>
+                    <div>
+                         <h2>Curving Samosha</h2>
+                         <p>The pizza here is absolutely incredible! The crust is perfectly crispy on the outside and soft on the inside, with just the right.</p>
+                         
+                    </div>
+                    <div>
+                         <div><h2>25 Rupees</h2></div>
+                         <div><i class="ri-shopping-cart-2-fill"></i></div>
+                    </div>
+               </div>
+               <div class="menu-iteams">
+                    <div> <img src="medias/pizza-img.jpg" alt=""></div>
+                    <div>
+                         <h2>Delicious  Pizza</h2>
+                         <p>The pizza here is absolutely incredible! The crust is perfectly crispy on the outside and soft on the inside, with just the right.</p>
+                    </div>
+                    <div>
+                         <div><h2>200 Rupees</h2></div>
+                         <div><i class="ri-shopping-cart-2-fill"></i></div>
+                    </div>
+               </div>
+               <div class="menu-iteams">
+                    <div> <img src="medias/pizza-img.jpg" alt=""></div>
+                    <div>
+                         <h2>Delicious  Pizza</h2>
+                         <p>The pizza here is absolutely incredible! The crust is perfectly crispy on the outside and soft on the inside, with just the right.</p>
+                         
+                    </div>
+                    <div>
+                         <div><h2>200 Rupees</h2></div>
+                         <div><i class="ri-shopping-cart-2-fill"></i></div>
+                    </div>
                </div>
                <div>
-                    <ul>
-                         <li><a href="http://">Out</a></li>
-                         <li><a href="http://">Subscribe US</a></li>
-                         <li><a href="http://">FAQ</a></li>
-                    </ul>
+                    <button class="btns" type="button">View More</button>
                </div>
           </div>
-          <div class="fourDiv footerDiv">
+      </section>
+
+     <!-- Blog Section  -->
+      <section class="blog-section">
+          <div> <img src="medias/blog-img.jpg" alt="" srcset=""></div>
+          <div>
+               <h2>We Are Feane</h2>
+               <p>Even before the scheduled commercial opening of the Vizhinjam International Seaport in Kerala, the port has contributed around ₹4.7 crore as taxes to the State’s exchequer contributed.</p>
+               <button type="button" class="btns">Read More</button>
+          </div>
+      </section>
+
+     <!-- Review Section  -->
+      <section class="review-section">
+
+      </section>
+
+     <!-- Footer Section  -->
+     <footer class="footer">
+          <div>
+               <h2 class="heading-footer">Contact Us</h2>
+               <p>Location</p>
+               <P>Call +91-8800998867</P>
+               <p>grubdelivery@mail.com</p>
+          </div>
+          <div>
+               <h2 class="heading-footer">Feane</h2>
                <div>
-                    <h2>Support</h2>
+                    Don't forget to review our food, so that we can grow together and make delicious one.
                </div>
                <div>
-                    <ul>
-                         <li><a href="http://">Account</a></li>
-                         <li><a href="http://">Support Centre</a></li>
-                         <li><a href="http://">Feedback</a></li>
-                         <li><a href="http://">Accebility</a></li>
-                    </ul>
+                    <i class="ri-facebook-circle-fill"></i>
+                    <i class="ri-instagram-fill"></i>
+                    <i class="ri-linkedin-box-fill"></i>
+                    <i class="ri-pinterest-fill"></i>
+                    <i class="ri-map-pin-2-fill"></i>
                </div>
           </div>
-          <div class="fiveDiv footerDiv">
-               <div>
-                    <h2>Team Members</h2>
-               </div>
+          <div>
+               <h2 class="heading-footer">Team Members</h2>
                <div>
                     <ul>
-                         <li><a href="http://">Aayush Gupta(C)</a></li>
-                         <li><a href="http://">Siddhant Kumar</a></li>
-                         <li><a href="http://">Avijit Adhikari</a></li>
-                         <li><a href="http://">Ankush Sharma</a></li>
-                         <li><a href="http://">Naina Rani</a></li>
-                         <li><a href="http://">Khushi Vig</a></li>
+                         <li><a href="">Aayush Gupta &copy;</a></li>
+                         <li><a href="">Siddhant Jaiswal</a></li>
+                         <li><a href="">Avijit Adhikari</a></li>
+                         <li><a href="">Khushi Vig</a></li>
+                         <li><a href="">Naina Rani</a></li>
                     </ul>
                </div>
           </div>
      </footer>
+
+     <!-- Designing Credit -->
+     <div class="copyright-div">
+          <p>&copy; All copy right reserved | Design by Aayush and Aayush's Team.</p>
+     </div>
 </body>
 </html>
