@@ -307,6 +307,7 @@
      /* justify-content: safe; */
 }
 
+
 /* Footer Section Styling */
 .footer{
      width: 100%;
@@ -315,18 +316,73 @@
      display: flex;
      justify-content: space-around;
      padding: 30px 15px 0px 30px;
+     color: var(--second-bcg-clr);
 }
-.footer .heading-footer{
+.footer > .footer-iteam{
+     /* background-color: #9c7519; */
+     width: 30%;
+     display: flex;
+     flex-direction: column;
+     justify-self: center;
+     align-items: center;
+}
+.footer > .footer-iteam > .heading-footer{
      color: var(--font-clr);
      font-family: var(--first-font);
-     font-size: 1.5rem;
-     font-weight: 400;
+     font-size: 1.9rem;
+     font-weight: 600;
      letter-spacing: 1px;
+     padding-bottom: 10px;
 }
-/* .footer > div > div > i{
-     padding: 20px;
-     background-color: #9c7519;
-} */
+.footer > .footer-contact > div{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 5px;
+}
+.footer > .footer-contact > div > p{
+     font-size: 1.1rem;
+     font-family: var(--third-font);
+     font-weight: 400;
+     &:hover{
+          color: var(--secondary-clr);
+          transition: all ease-in;
+          cursor: pointer;
+     }
+}
+.footer > .footer-contact > div > i{
+     color: var(--secondary-clr);
+     font-size: 1.1rem;
+}
+.footer > .footer-review > div > p{
+     font-size: 0.9em;
+     width: 350px;
+     letter-spacing: .5px;
+     font-family: var(--third-font);
+     padding-bottom: 25px;
+
+} 
+.footer > .footer-review > div > i{
+     padding: 10px 10px;
+     font-size: 1.4rem;
+     background-color: #FBC135;
+     border-radius: 50%;
+     margin: 2px;
+     &:hover{
+          color: var(--txt-clr);
+          background-color: var(--font-clr);
+          transition: all ease-in;
+          cursor: pointer;
+     }
+}
+.footer > .footer-team > div > ul > li > a{
+     text-decoration: none;
+     color: var(--font-clr);
+     font-family: var(--third-font);
+     letter-spacing: .5px;
+
+}
+
 
 .copyright-div{
      height: 5vh;
