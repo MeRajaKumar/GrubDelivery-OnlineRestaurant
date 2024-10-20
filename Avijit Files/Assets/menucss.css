@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #FFFBEF;
+}
+
+.logo {
+    width: 80px;
+    font-family: forte;
+}
+
+.menu-title h1 {
+    color: #FF8C00;
+    font-size: 3em;
+    margin: 0;
+}
+
+.menu-title h2 {
+    color: #333;
+    font-size: 2em;
+    margin: 0;
+}
+
+.menu-title p {
+    font-size: 0.9em;
+    color: #999;
+}
+
+.menu-sections {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    width: 32%;
+}
+
+h3 {
+    color: #FF8C00;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFBEF;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: 0.8em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.footer {
+    text-align: center;
+    background-color: #FFFBEF;
+    color: #FF8C00;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.footer button {
+    background-color: #fff;
+    color: #FF8C00;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.footer button:hover {
+    background-color: #ddd;
+}
+
+.footer p {
+    margin: 10px 0 0;
+    font-size: 0.9em;
+}
